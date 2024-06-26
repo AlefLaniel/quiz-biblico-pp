@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Privacy from "../pages/Privacy";
 
@@ -7,12 +7,12 @@ import Privacy from "../pages/Privacy";
 
 const Routers = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route Component={Home} path="/" />
         <Route Component={Privacy} path="/privacy" />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
